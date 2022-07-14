@@ -37,7 +37,7 @@ function App() {
     .then(data => 
       setDailyData(data))
 }, [lat, lon])
-
+  // map dosyası kurulamıyor
   return (
     <>
     <Context.Provider value={data}>
