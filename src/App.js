@@ -12,7 +12,7 @@ function App() {
   const [ lon, setLon] = useState("35.3213333")
   const [ wetData, setWetData] = useState("")
   const [ dailyData, setDailyData] = useState("")
-  const ApiKey = "6603390677eaa48252a3feedb0f6a585"
+  const ApiKey = process.env.REACT_APP_API_KEY
   const url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid="+ApiKey+"&units=imperial&lang=tr"
   const url2= "https://api.openweathermap.org/data/2.5/onecall?lat="+lat+"&lon="+lon+"&appid="+ApiKey+"&units=imperial&lang=tr"
   const data = {

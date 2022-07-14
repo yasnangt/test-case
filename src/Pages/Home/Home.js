@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import './home.css'
 
 export default function Home(){
-    const APIkey = "6603390677eaa48252a3feedb0f6a585"
+    const APIkey = process.env.REACT_APP_API_KEY
     const [key, setKey] = useState('');
     const nav = useNavigate();
     function handleChange(){
