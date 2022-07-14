@@ -1,0 +1,63 @@
+.first-letter{
+    text-transform:capitalize;
+}
+.weather-container{
+    display: grid;
+    
+ 
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(51, 51, 110);
+    color: white;
+}
+.header-back{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header-mid{
+    width: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.wt-description{
+    background-color: #f8f8f89c;
+    display: grid;
+    width: 700px;
+    height: 700px;
+    grid-template-rows: 20% 20%;
+}
+.wt-description-top{
+    width: 100%;
+    background-color: #88ff00;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    align-items: center;
+}
+.wt-description-top-degrees{
+    display: flex;
+    align-items: center;
+}
+.wt-description-top-description{
+    display: flex;
+    flex-direction: column;
+}
+.wt-description-top-degrees-description{
+    display: flex;
+    flex-direction: column;
+}
+.wt-daily{
+    display: flex;
+    justify-content: center;
+}
+.wt-daily-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
