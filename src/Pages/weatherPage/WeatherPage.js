@@ -20,7 +20,7 @@ export default function WeatherPage(){
         
         
         var formattedTime = hours + ':' + minutes.substr(-2) ;
-
+        console.log(dailyData)
     return(
         <>
         <div className='weather-container'>
@@ -55,11 +55,12 @@ export default function WeatherPage(){
                    
                 </div>
                 <div className="wt-daily">
-                    {dailyData.daily.map((id) => (
-                        <div className="wt-daily-description"> 
-                            <span><img src={"http://openweathermap.org/img/wn/"+wetData.weather[0].icon+"@2x.png"}/></span> 
+                    {dailyData.daily.map((id, index) => (
+                        <div key={index} className="wt-daily-description"> 
+                        <p>{index}</p>
+                            <span><img src={"http://openweathermap.org/img/wn/"+id.weather[0].icon+"@2x.png"}/></span> 
                             <p>{Math.round((id.temp.day-32)/1.8)}<span>&#8451;</span> </p>
-                            <span className="first-letter">{wetData.weather[0].description} </span> 
+                            <span className="first-letter">{id.weather[0].description} </span> 
                             <span> {} </span>
                         </div>
                         
